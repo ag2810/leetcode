@@ -8,10 +8,8 @@ public:
         
         int ans = 0;
         
-        for(auto it : mp) {
-            if(it.second < 0) ans += it.second;
-        }
+        for(auto it : mp) ans += abs(it.second);
         
-        return abs(ans);
+        return ans / 2;
     }
 };
